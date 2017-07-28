@@ -20,6 +20,7 @@ import {
 import ImagePicker from './src/native_modules'
 import SimpleModule from './src/simple_module'
 import Second from './src/second'
+import Splash from './src/splash'
 
 import './src/config/server'
 
@@ -91,7 +92,7 @@ export default class RNapp extends Component {
             navIcon={{uri: 'ic_arrow_back_black_24dp'}}
             onIconClicked={()=>{this._showMain()}}
             style={styles.toolbar}/>
-          <Second style={{backgroundColor: 'yellow'}}/>
+          <Splash type={0} style={{flex: 1, backgroundColor: 'yellow'}}/>
         </View>
       )
     }
